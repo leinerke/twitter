@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    image: node:16.15.0-alpine
+    user: node
+    working_dir: /usr/app
+    volumes:
+      - ./:/usr/app
+    ports:
+      - "80:3000"
+      - "6006:6006"
+    command:
+      - tail
+      - -f
+      - /dev/null
