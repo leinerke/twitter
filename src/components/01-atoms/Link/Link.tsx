@@ -5,6 +5,7 @@ interface LinkProps {
   children: React.ReactNode;
   href: string;
   props?: unknown;
+  linkProps?: unknown;
   color: LinkColor;
 }
 
@@ -13,7 +14,13 @@ export enum LinkColor {
   footer = 'footer',
 }
 
-export const Link = ({ children, href, color, props }: LinkProps) => {
+export const Link = ({
+  children,
+  href,
+  color,
+  props,
+  linkProps,
+}: LinkProps) => {
   let textColor: string[] = [];
 
   switch (color) {
@@ -33,7 +40,7 @@ export const Link = ({ children, href, color, props }: LinkProps) => {
 
   return (
     <NextLink href={href} {...props}>
-      <a className={className.join(' ')}>{children}</a>
+      <a {...linkProps} className={className.join(' ')}>{children}</a>
     </NextLink>
   );
 };
