@@ -5,7 +5,7 @@ interface HeadingProps {
   level: levelHeading;
 }
 
-enum levelHeading {
+export enum levelHeading {
   h1 = 1,
   h2 = 2,
   h3 = 3,

@@ -2,11 +2,11 @@ import React from 'react';
 
 interface ButtonProps {
   children: React.ReactNode;
-  modifier?: ButtonModifier;
+  modifier: ButtonModifier;
   onClick?: () => void;
 }
 
-enum ButtonModifier {
+export enum ButtonModifier {
   Primary = 'primary',
   Secondary = 'secondary',
   Transparent = 'transparent',
@@ -36,7 +36,6 @@ export const Button = ({
       textColor = 'text-primary';
       break;
     case ButtonModifier.Primary:
-    default:
       bgColor = 'bg-primary';
       bgColorHover = 'hover:bg-primary-h';
       borderColor = 'border-transparent';

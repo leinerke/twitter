@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Button } from './Button';
+import { Button, ButtonModifier } from './Button';
 
 export default {
   title: '01 Atoms/Button',
@@ -14,3 +14,4 @@ const Template: ComponentStory<typeof Button> = args => (
 );
 
 export const button = Template.bind({});
+button.args = { modifier: ButtonModifier.Primary };
