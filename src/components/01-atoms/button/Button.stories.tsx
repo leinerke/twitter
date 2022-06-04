@@ -14,4 +14,4 @@ const Template: ComponentStory<typeof Button> = args => (
 );
 
 export const button = Template.bind({});
-button.args = { modifier: ButtonModifier.Primary };
+button.args = { modifier: ButtonModifier.primary };

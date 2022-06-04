@@ -20,6 +20,8 @@ module.exports = {
         'border-transparent': '#536471',
         'divider-dark': '#2f3336',
         'divider-light': '#eff3f4',
+        'footer-link': '#536471',
+        'footer-link-dark': '#71767b',
       },
     },
   },
