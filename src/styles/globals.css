@@ -48,5 +48,5 @@
 }
 
 html {
-  @apply font-TwitterChirp;
+  @apply font-TwitterChirp text-body dark:text-body-dark;
 }

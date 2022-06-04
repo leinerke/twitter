@@ -1,6 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Button } from './Button';
+import { Button, ButtonModifier } from './Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default {
   title: '01 Atoms/Button',
@@ -9,8 +11,10 @@ export default {
 
 const Template: ComponentStory<typeof Button> = args => (
   <Button {...args}>
+    <FontAwesomeIcon icon={faTwitter} className="pr-2" />
     Button
   </Button>
 );
 
 export const button = Template.bind({});
+button.args = { modifier: ButtonModifier.primary };
