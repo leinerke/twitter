@@ -6,7 +6,8 @@ interface ParagraphProps {
 }
 
 export enum ParagraphSize {
-  small = 'text-xs',
+  xs = 'text-xs',
+  small = 'text-sm',
   base = 'text-base',
 }
 

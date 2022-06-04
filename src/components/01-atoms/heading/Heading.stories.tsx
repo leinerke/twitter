@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { Heading, levelHeading } from './Heading';
+import { Heading, LevelHeading } from './Heading';
 
 export default {
   title: '01 Atoms/Heading',
@@ -14,4 +14,4 @@ const Template: ComponentStory<typeof Heading> = args => (
 );
 
 export const heading = Template.bind({});
-heading.args = { level: levelHeading.h1 };
+heading.args = { level: LevelHeading.h1 };
