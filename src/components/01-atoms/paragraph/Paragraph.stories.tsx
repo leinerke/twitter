@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Paragraph, ParagraphSize } from './paragraph';
+import { Paragraph, ParagraphSize } from './Paragraph';
 
 export default {
   title: '01 Atoms/Paragraph',
