@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/usr/app
     ports:
-      - "80:3000"
+      - "3000:3000"
       - "6006:6006"
     command:
       - tail
