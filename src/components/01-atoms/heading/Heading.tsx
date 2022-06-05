@@ -1,27 +1,26 @@
 import React from 'react';
 
 interface HeadingProps {
-  children: React.ReactNode;
   level: LevelHeading;
+  children: React.ReactNode;
 }
 
 export enum LevelHeading {
-  h1 = 1,
-  h2 = 2,
-  h3 = 3,
-  h4 = 4,
-  h5 = 5,
-  h6 = 6,
+  h1 = 'h1',
+  h2 = 'h2',
+  h3 = 'h3',
+  h4 = 'h4',
+  h5 = 'h5',
+  h6 = 'h6',
 }
 
-export const Heading = ({
+export const Heading: React.FC<HeadingProps> = ({
+  level: Tag,
   children,
-  level,
 }: HeadingProps) => {
-  const Tag = `h${level}`;
   let fontSize;
 
-  switch (level) {
+  switch (Tag) {
     case LevelHeading.h1:
       fontSize = 'text-4xl sm:text-6xl';
       break;
