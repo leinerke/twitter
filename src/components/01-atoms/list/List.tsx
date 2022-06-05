@@ -15,7 +15,7 @@ export const List = ({ children, style }: ListProps) => {
 
   switch (style) {
     case ListStyle.horizontal:
-      className.push('flex', 'gap-3', 'flex-wrap');
+      className.push('flex', 'gap-y-2', 'gap-x-6', 'flex-wrap', 'justify-center');
       break;
   }
 

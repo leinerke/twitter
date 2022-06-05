@@ -23,23 +23,23 @@ export const Heading = ({
 
   switch (level) {
     case LevelHeading.h1:
-      fontSize = 'text-6xl';
+      fontSize = 'text-4xl sm:text-6xl';
       break;
     case LevelHeading.h2:
-      fontSize = 'text-5xl';
+      fontSize = 'text-3xl sm:text-5xl';
       break;
     case LevelHeading.h3:
-      fontSize = 'text-4xl';
+      fontSize = 'text-2xl sm:text-4xl';
       break;
     case LevelHeading.h4:
-      fontSize = 'text-3xl';
+      fontSize = 'text-xl sm:text-3xl';
       break;
     case LevelHeading.h5:
-      fontSize = 'text-2xl';
+      fontSize = 'text-lg sm:text-2xl';
       break;
     case LevelHeading.h6:
     default:
-      fontSize = 'text-xl';
+      fontSize = 'text-base sm:text-xl';
   }
 
   const className = [

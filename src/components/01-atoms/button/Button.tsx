@@ -39,11 +39,12 @@ export const Button = ({
       bgColor = 'bg-primary';
       bgColorHover = 'hover:bg-primary-h';
       borderColor = 'border-transparent';
-      textColor = 'text-black';
+      textColor = 'text-white';
       break;
   }
 
   const className = [
+    'max-w-full',
     'w-72',
     'p-2',
     'rounded-full',
