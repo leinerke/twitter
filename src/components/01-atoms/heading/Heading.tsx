@@ -1,45 +1,44 @@
 import React from 'react';
 
 interface HeadingProps {
-  children: React.ReactNode;
   level: LevelHeading;
+  children: React.ReactNode;
 }
 
 export enum LevelHeading {
-  h1 = 1,
-  h2 = 2,
-  h3 = 3,
-  h4 = 4,
-  h5 = 5,
-  h6 = 6,
+  h1 = 'h1',
+  h2 = 'h2',
+  h3 = 'h3',
+  h4 = 'h4',
+  h5 = 'h5',
+  h6 = 'h6',
 }
 
-export const Heading = ({
+export const Heading: React.FC<HeadingProps> = ({
+  level: Tag,
   children,
-  level,
 }: HeadingProps) => {
-  const Tag = `h${level}`;
   let fontSize;
 
-  switch (level) {
+  switch (Tag) {
     case LevelHeading.h1:
-      fontSize = 'text-6xl';
+      fontSize = 'text-4xl sm:text-6xl';
       break;
     case LevelHeading.h2:
-      fontSize = 'text-5xl';
+      fontSize = 'text-3xl sm:text-5xl';
       break;
     case LevelHeading.h3:
-      fontSize = 'text-4xl';
+      fontSize = 'text-2xl sm:text-4xl';
       break;
     case LevelHeading.h4:
-      fontSize = 'text-3xl';
+      fontSize = 'text-xl sm:text-3xl';
       break;
     case LevelHeading.h5:
-      fontSize = 'text-2xl';
+      fontSize = 'text-lg sm:text-2xl';
       break;
     case LevelHeading.h6:
     default:
-      fontSize = 'text-xl';
+      fontSize = 'text-base sm:text-xl';
   }
 
   const className = [

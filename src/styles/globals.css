@@ -47,6 +47,18 @@
   font-display: swap;
 }
 
+:root {
+  --doc-height: 100vh;
+}
+
 html {
   @apply font-TwitterChirp text-body dark:text-body-dark;
+}
+
+body {
+  @apply dark:bg-black;
+}
+
+.height-screen {
+  height: var(--doc-height);
 }

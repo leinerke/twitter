@@ -23,6 +23,9 @@ module.exports = {
         'footer-link': '#536471',
         'footer-link-dark': '#71767b',
       },
+      backgroundImage: {
+        'login': 'url(\'https://abs.twimg.com/sticky/illustrations/lohp_en_1302x955.png\')',
+      },
     },
   },
   plugins: [],
