@@ -31,7 +31,7 @@ jobs:
       - name: Build my App
         run: yarn build
         env:
-          NEXT_PUBLIC_BASE_PATH: /twitter
+          NEXT_PUBLIC_BASE_PATH: /twitter-login
       - run: yarn export
       - run: touch ./out/.nojekyll
 
